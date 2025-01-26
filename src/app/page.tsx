@@ -1,4 +1,4 @@
-import Image from "next/image";
+'use client'
 
 // export default function Home() {
 //   return (
@@ -12,8 +12,12 @@ import Header from '../components/header';
 import Hero from '../components/hero';
 import Features from '../components/features';
 import Advantages from '../components/advantages';
+import Testimonials from '../components/testimonials';
+import HowItWorks from '../components/howItWorks';
 import CallToAction from '../components/callToAction';
 import Footer from '../components/footer';
+import AnimatedIcons from '../components/animatedIcons';
+
 
 const Home: React.FC = () => {
   return (
@@ -23,10 +27,25 @@ const Home: React.FC = () => {
         <meta name="description" content="Transform your fitness journey with AI-generated workout and diet plans." />
       </Head>
       <Header />
-      <Hero />
-      <Features />
-      <Advantages />
-      <CallToAction />
+      <section id="home">
+        <Hero />
+      </section>
+      <AnimatedIcons />
+      <section id="about">
+        <Features />
+      </section>
+      <AnimatedIcons />
+      <section id="advantages">
+        <Advantages />
+      </section>
+      <AnimatedIcons />
+      <Testimonials />
+      <AnimatedIcons />
+      <HowItWorks />
+      <AnimatedIcons />
+      <section id="subscription">
+        <CallToAction />
+      </section>
       <Footer />
     </>
   );
